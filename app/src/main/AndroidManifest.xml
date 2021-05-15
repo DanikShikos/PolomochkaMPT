@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.polomkampt">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PolomkaMPT">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MailInputActivity"
+            android:label="Сообщить о неисправности">
+        </activity>
+        <activity
+            android:name=".NeispravnostActivity"
+            android:label="Сообщить о неисправности">
+        </activity>
+        <activity
+            android:name=".AuthActivity"
+            android:label="Вход в систему">
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="Регистрация сотрудника">
+        </activity>
+        <activity
+            android:name=".SpisokZadachActivity"
+            android:label="Список задач">
+        </activity>
+        <activity
+            android:name=".ZayavleniyaActivity"
+            android:label="Заявления о неисправности">
+        </activity>
+        <activity
+            android:name=".LichKabActivity"
+            android:label="Личный кабинет">
+        </activity>
+        <activity
+            android:name=".SotrudnikiActivity"
+            android:label="Сотрудники">
+        </activity>
+        <activity
+            android:name=".WorkActivity"
+            android:label="Переход">
+        </activity>
+        <activity
+            android:name=".ZayavlenieShowActivity"
+            android:label="Переход">
+        </activity>
+
+    </application>
+
+</manifest>

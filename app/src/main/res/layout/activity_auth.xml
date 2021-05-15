@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etInMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvInMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvDannie" />
+
+    <TextView
+        android:id="@+id/tvDannie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Введите данные для входа"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuth" />
+
+    <TextView
+        android:id="@+id/tvInPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="77dp"
+        android:text="Пароль:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInMail" />
+
+    <Button
+        android:id="@+id/btBackAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"
+        android:text="Назад"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btReg"
+        app:layout_constraintTop_toBottomOf="@+id/etInPas" />
+
+    <TextView
+        android:id="@+id/tvAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход в систему"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etInPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvInPas"
+        app:layout_constraintTop_toBottomOf="@+id/etInMail" />
+
+    <Button
+        android:id="@+id/btAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="Войти"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInPas" />
+
+    <TextView
+        android:id="@+id/tvInMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="56dp"
+        android:text="Почта:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDannie" />
+</androidx.constraintlayout.widget.ConstraintLayout>

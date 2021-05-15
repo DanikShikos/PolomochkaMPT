@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Регистрация в системе"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDannieReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Введите данные для входа"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReg" />
+
+    <TextView
+        android:id="@+id/tvUpMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
+        android:text="Почта:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDannieReg" />
+
+    <TextView
+        android:id="@+id/tvUpPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="68dp"
+        android:text="Пароль:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpMail" />
+
+    <EditText
+        android:id="@+id/etUpMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/tvUpMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvDannieReg" />
+
+    <EditText
+        android:id="@+id/etUpPas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toEndOf="@+id/tvUpPas"
+        app:layout_constraintTop_toBottomOf="@+id/etUpMail" />
+
+    <Button
+        android:id="@+id/btReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickReg"
+        android:text="Зарегистрировать"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <Button
+        android:id="@+id/btBackReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Назад"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toEndOf="@+id/btReg"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <EditText
+        android:id="@+id/etFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="83dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvFIO"
+        app:layout_constraintTop_toBottomOf="@+id/etUpPas" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="83dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPhone"
+        app:layout_constraintTop_toBottomOf="@+id/etFIO" />
+
+    <TextView
+        android:id="@+id/tvFIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="57dp"
+        android:text="ФИО:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpPas" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:text="Телефон:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFIO" />
+</androidx.constraintlayout.widget.ConstraintLayout>
